@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="#03A9F4"
+        app:titleTextColor="#FFFFFF"
+        app:subtitleTextColor="#fff"
+        app:subtitle="http://github.com/rafiihidayat"
+        app:title="E020317041 Rafi'i Hidayat Nor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:gravity="end"
+        android:textSize="20dp"
+        android:text="Active"
+        android:textColor="#000"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <Switch
+        android:id="@+id/sw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="8dp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tvNim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:text="NIM"
+        android:textColor="#000"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/etNim"
+        android:ems="15"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill,LabelFor,RtlHardcoded,TextFields" />
+
+    <TextView
+        android:id="@+id/tvNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="8dp"
+        android:text="Nama"
+        android:textColor="#000"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/etNama"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill,LabelFor,RtlHardcoded,TextFields" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvJK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="14dp"
+            android:text="Gender"
+            android:textColor="#000"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="InefficientWeight,UselessLeaf">
+
+            <RadioButton
+                android:id="@+id/rbLaki"
+                android:checked="true"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="@string/laki_laki"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <RadioButton
+                android:id="@+id/rbPr"
+                android:layout_width="163dp"
+                android:checked="true"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="@string/Perempuan"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:text="Alamat"
+        android:textColor="#000"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/etAlamat"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill,LabelFor,RtlHardcoded,TextFields" />
+
+    <TextView
+        android:id="@+id/tvTelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:text="Telpon"
+        android:textColor="#000"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/etTelp"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill,LabelFor,RtlHardcoded,TextFields" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btClear"
+            android:text="Clear"
+            android:layout_marginLeft="18dp"
+            android:layout_width="164dp"
+            android:layout_height="match_parent"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <Button
+            android:id="@+id/btSubmit"
+            android:layout_width="164dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="210dp"
+            android:text="Submit"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </RelativeLayout>
+
+</LinearLayout>
+
